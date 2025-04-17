@@ -15,3 +15,10 @@
   variables:
     CUSTOM: "true"
 ```
+```
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying branch: $CI_COMMIT_REF_NAME"
+    - ./deploy.sh --env=$CI_COMMIT_REF_NAME
+```
