@@ -9,7 +9,7 @@
       else
         echo "Default step 2"
       fi
--------------------
+
 .job-uses-custom:
   extends: .base-job
   variables:
